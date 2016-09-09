@@ -1,0 +1,95 @@
+<!-- Unordered list, make "Home" a link and use "index.html" for the href attribute value -->
+Home / Blog
+
+<!-- Heading 2 -->
+15
+
+<!-- Heading 3 -->
+MAR
+
+<!-- Image, path to image is "images/blog1.png", enter "Blog photo" for alt attribute value -->
+
+<!-- Heading 2 -->
+Article Title Here
+
+<!-- Paragraph -->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<!-- Link, make href attribute value = "#" -->
+More
+
+<!-- Heading 2 -->
+13
+
+<!-- Heading 3 -->
+MAR
+
+<!-- Image, path to image is "images/blog2.png", enter "Blog photo" for alt attribute value -->
+
+<!-- Heading 2 -->
+Article Title Here
+
+<!-- Paragraph -->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<!-- Link, make href attribute value = "#" -->
+More
+
+<!-- Heading 2 -->
+5
+
+<!-- Heading 3 -->
+MAR
+
+<!-- Image, path to image is "images/blog3.png", enter "Blog photo" for alt attribute value -->
+
+<!-- Heading 2 -->
+Article Title Here
+
+<!-- Paragraph -->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<!-- Link, make href attribute value = "#" -->
+More
+
+<!-- Unordered list, make each a link and use "#" for the href attribute value -->
+1
+2
+3
+4
+5
+
+<!-- Heading 2 -->
+Side Bar
+
+<!-- Paragraph -->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+<!-- Heading 2 -->
+Instagram
+
+<!-- Organize the following images as an unorganized list -->
+<!-- Image, path to image is "http://distilleryimage11.s3.amazonaws.com/a64ff38a022711e3b55422000a9f1377_5.jpg", enter "Instagram" for alt attribute value -->
+
+<!-- Image, path to image is "http://distilleryimage4.s3.amazonaws.com/3d501cca014b11e389a922000aeb0c69_5.jpg", enter "Instagram" for alt attribute value -->
+
+<!-- Image, path to image is "http://distilleryimage9.s3.amazonaws.com/bfa27c96fe9811e28b6522000a1f97ac_5.jpg", enter "Instagram" for alt attribute value -->
+
+<!-- Image, path to image is "http://distilleryimage9.s3.amazonaws.com/1ce78e44fd4211e2ab2122000a9f4dc5_5.jpg", enter "Instagram" for alt attribute value -->
+
+<!-- Image, path to image is "http://distilleryimage6.s3.amazonaws.com/197269e4f6c811e2829522000a1fa769_5.jpg", enter "Instagram" for alt attribute value -->
+
+<!-- Heading 2 -->
+Links
+
+<!-- Unordered list, make each a link and use "#" for the href attribute value -->
+Theme Armada
+Twitter Link
+Insert Link Three
+Insert Link Four
+
+<!-- Heading 2 -->
+Boxed
+
+<!-- Paragraph -->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inc.

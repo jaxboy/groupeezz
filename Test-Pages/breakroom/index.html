@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en" ng-app="breakroom">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Breakroom</title>
+
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+        <link rel="stylesheet" href="css/ui.totop.css">
+        <link rel="stylesheet" href="css/style.css">      
+</head>
+
+<body>
+    <div class="container" ng-controller="AppCtrl"><!--Open container -->
+        <header class="row header">
+            <!-- navbar -->
+<div class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Breakroom logo">
+        </a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li ng-class="homeActive">
+                <a href="#">Home</a>
+            </li>
+            <li ng-class="aboutActive">
+                <a href="#/about">About</a>
+            </li>
+            <li ng-class="servicesActive">
+                <a href="#/services">Services</a>
+            </li>
+            <li ng-class="portfolioActive">
+                <a href="#/portfolio">Portfolio</a>
+            </li>
+            <li ng-class="blogActive">
+                <a href="#/blog">Blog</a>
+            </li>
+            <li ng-class="contactActive">
+                <a href="#/contact">Contact</a>
+            </li>
+            <li>
+                <a data-toggle="modal" href="#myModal" class="login">
+                    <i class="icon-user"></i>Login</a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="btn-sm">Sign Up</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- end navbar -->
+            
+        </header>
+
+<main ng-controller="wordpressCtrl"><!--open main content -->
+    
+    <div class="reveal-animation" ng-view></div>
+    
+    <section class="row">
+	<!-- carousel -->
+<div id="carousel-example-generic" class="carousel slide bs-docs-carousel-example">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/header1.jpg" alt="First slide">
+            <div class="carousel-caption">
+                <h1>Welcome To Breakroom</h1>
+                <h2>
+                    <i>A multipurpose Bootstrap Theme</i>
+                </h2>
+                <a class="btn-main" href="#">
+                    <i class="icon-chevron-right"></i> See More</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/header2.jpg" alt="Second slide">
+            <div class="carousel-caption">
+                <h1>Built With Bootstrap</h1>
+                <h2>
+                    <i>And 100% Responsive</i>
+                </h2>
+                <a class="btn-main" href="#">
+                    <i class="icon-chevron-right"></i> See More</a>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/header3.jpg" alt="Third slide">
+            <div class="carousel-caption">
+                <h1>Lorem ipsum dolor sit</h1>
+                <h2>
+                    <i>Curabitur viverra nulla non tel</i>
+                </h2>
+                <a class="btn-main" href="#">
+                    <i class="icon-chevron-right"></i> See More</a>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control hidden-phone" href="#carousel-example-generic" data-slide="prev">
+        <i class="icon-angle-left"></i>
+    </a>
+    <a class="right carousel-control hidden-phone" href="#carousel-example-generic" data-slide="next">
+        <i class="icon-angle-right"></i>
+    </a>
+</div>
+<!-- end carousel -->
+</section>
+
+<section class="row well">
+		<!-- Heading 3 -->
+		<h3>LOREM IPSUM DOLOR <em>- Curabitur viverra nulla non tellus suscipit condimentum eget.</em></h3>
+</section>
+
+<section class="row services"> 
+	<div class="col-lg-3 text-center">
+        <i class="icon-thumbs-up-alt icon-4x"></i>
+    	<!-- Heading 2 -->
+		<h2>Built w/ Bootstrap</h2>
+
+		<!-- Paragraph -->
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+  	</div>
+	<div class="col-lg-3 text-center">
+        <i class="icon-flag icon-4x"></i>
+		<!-- Heading 2 -->
+		<h2>Over 249 Icons</h2>
+
+		<!-- Paragraph -->
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+ 	</div>
+	<div class="col-lg-3 text-center">
+        <i class="icon-mobile-phone icon-4x"></i>
+		<!-- Heading 2 -->
+		<h2>Mobile Responsive</h2>
+
+		<!-- Paragraph -->
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+	</div>
+    <div class="col-lg-3 text-center">
+        <i class="icon-file-text-alt icon-4x"></i>
+		<!-- Heading 2 -->
+		<h2>Mobile Responsive</h2>
+
+		<!-- Paragraph -->
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+ 	</div>
+ </section>
+
+<section class="row message">
+<!-- Heading 2 -->
+<h2>We strive to out work our competition with an effective approach and a powerful skill set, which is why were industry leading.</h2>
+</section>
+
+<section class="row clients">
+    <div class="image-break"></div>
+	<div class="col-lg-12"> 
+		<!-- Heading 2 -->
+	<h2>Our Clients</h2>
+    </div>
+
+	<div class="col-sm-2">
+		<!-- Make each image a link, make href attribute value = "#" -->
+
+		<!-- Image, path to image is "images/client1.png", enter "Company logo" for alt attribute value -->
+		<a href="#"><img src="images/clients1.png" width="170" height="100" alt="Company Logo" class="img-responsive"></a>
+	</div>
+    
+    <div class="col-sm-2">
+		<!-- Image, path to image is "images/client2.png", enter "Company logo" for alt attribute value -->
+		<a href="#"><img src="images/clients2.png" width="170" height="100" alt="Company Logo" class="img-responsive"></a>
+	</div>
+    
+	<div class="col-sm-2">
+		<!-- Image, path to image is "images/client3.png", enter "Company logo" for alt attribute value -->
+		<a href="#"><img src="images/clients3.png" width="170" height="100" alt="Company Logo" class="img-responsive"></a>
+    </div>
+      
+   	<div class="col-sm-2">
+		<!-- Image, path to image is "images/client4.png", enter "Company logo" for alt attribute value -->
+		<a href="#"><img src="images/clients4.png" width="170" height="100" alt="Company Logo" class="img-responsive"></a>
+	</div>
+    
+    <div class="col-sm-2">
+		<!-- Image, path to image is "images/client1.png", enter "Company logo" for alt attribute value -->
+		<a href="#"><img src="images/clients1.png" width="170" height="100" alt="Company Logo" class="img-responsive"></a>
+	</div>
+    
+    <div class="col-sm-2">
+		<!-- Image, path to image is "images/client4.png", enter "Company logo" for alt attribute value -->
+		<a href="#"><img src="images/clients4.png" width="170" height="100" alt="Company Logo" class="img-responsive"></a>
+   	</div>
+</section>
+
+    
+</main><!-- end of main content -->
+
+<footer><!--open footer -->
+<section class="row footer-top">
+	<div class="col-lg-4">
+		<!-- Heading 2 -->
+		<h2>About Us</h2>
+
+			<!-- Paragraph -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+			<!-- Link, make href attribute value = "#" -->
+			<a href="#">+ More</a>
+	</div>
+
+	<div class="col-lg-4">
+		<!-- Heading 2 -->
+		<h2>Latest Tweets</h2>
+
+		<!-- tweet content to be added later -->
+        <ul ng-controller="deliciousCtrl" class="list-unstyled">
+            <li ng-repeat="entry in entries"><i class="icon-twitter"></i><a href="{{entry.u">{{entry.d}}</a></li>
+        </ul>
+       
+	</div>
+
+	<div class="col-lg-4">
+		<!-- Heading 2 -->
+		<h2>Contact Info</h2>
+
+			<!-- Paragraph -->
+			<p>1234 Main Street | Suit 300</p>
+
+			<!-- Break -->
+			<br>Atlanta, GA 30303
+
+			<!-- Paragraph -->
+			<p><i class="icon-phone"><a href="tel:404.555.5555">404.555.5555</a></i></p>
+	</div>
+    
+    <ul class="list-inline">
+        <li>
+            <a class="twitter" href="#">
+                <i class="icon-twitter icon-large"></i>
+            </a>
+        </li>
+        <li>
+            <a class="facebook" href="#">
+                <i class="icon-facebook icon-large"></i>
+            </a>
+        </li>
+        <li>
+            <a class="google" href="#">
+                <i class="icon-google-plus icon-large"></i>
+            </a>
+        </li>
+        <li>
+            <a class="instagram" href="#">
+                <i class="icon-camera-retro icon-large"></i>    
+            </a>
+        </li>
+        <li>
+            <a class="pinterest" href="http://www.pinterest.com">
+                <i class="icon-pinterest icon-large"></i>
+            </a>   
+        </li>
+        <li>
+            <a class="linkedin" href="#">
+                <i class="icon-linkedin icon-large"></i>
+            </a>
+        </li>
+        <li>
+            <a class="Github" href="#">
+                <i class="icon-github-alt icon-large"></i>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+<section class="row footer-bottom">
+	<!-- Paragraph -->      
+	<p>© Breakroom. All Rights Reserved.<br>
+	Created by Theme Armada</p>
+</section>
+</footer>
+</div><!--close containter -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="Log In">Modal title</h4>
+        </div>
+        <div class="modal-body">
+            <input type="email" placeholder="Email" class="form-control">
+            <input type="password" placeholder="Password" class="form-control">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-sm">Log In</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<!-- Local plugin script -->
+    <script src="js/scripts.js"></script>
+
+<!-- Include AngularJS and helper libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-resource.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-route.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-sanitize.min.js"></script>
+        <script src="http://code.angularjs.org/1.2.0-rc.2/angular-animate.min.js"></script>
+        <!-- Local AngularJS app file -->
+        <script type="text/javascript" src="js/app.v2.js"></script>
+</body>
+</html>

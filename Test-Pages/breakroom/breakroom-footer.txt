@@ -1,0 +1,29 @@
+<!-- Heading 2 -->
+About Us
+
+<!-- Paragraph -->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+<!-- Link, make href attribute value = "#" -->
++ More
+
+<!-- Heading 2 -->
+Latest Tweets
+
+<!-- tweet content to be added later -->
+
+<!-- Heading 2 -->
+Contact Info
+
+<!-- Paragraph -->
+1234 Main Street | Suit 300
+
+<!-- Break -->
+Atlanta, GA 30303
+
+<!-- Paragraph -->
+404.555.5555
+
+<!-- Paragraph -->      
+© Breakroom. All Rights Reserved.
+Created by Theme Armada

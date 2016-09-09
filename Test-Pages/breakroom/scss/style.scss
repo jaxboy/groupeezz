@@ -1,0 +1,504 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+// Colors
+$white: #FFFFFF;
+$black: #000000;
+$turquoise: #84ccd3;
+$darkGray: #2a2a2a;
+$lightGray: #999999;
+$beige: #f5f5f5;
+
+// Typography
+$baseFontFamily: Helvetica Neue, Arial, sans-serif;
+$baseFontSize: 15px;
+$baseLineHeight: 1.5;
+
+$headingsFontFamily: "Lato", sans-serif;
+$headingsLineHeight: .5;
+
+$h1FontSize: 55px;
+$h1FontWeight: 100;
+
+$h2FontSize: 31px;
+$h2FontWeight: 300;
+                    
+$h3FontSize: 23px;
+$h3FontWeight: 800sdff
+
+//mixin for common background color, text color, and text color
+@mixin color-bg-te
+    background: $turquoise;
+    color: $white;
+    text-align: center;
+}
+
+/*Global Rules */
+body {
+    font-family: $baseFontFamily;
+    font-size: $baseFontSize;
+    line-height: $baseLineHeight;
+    color: $lightGray;
+    background-color: $white;
+}
+
+h1 {
+    font-family: $headingsFontFamily;
+    font-size: $h1FontSize;
+    font-weight: $h1FontWeight;
+    line-height: $headingsLineHeight;
+    color: $white;
+    background-color: $black;
+}
+
+h2 {
+    font-family: $headingsFontFamily;
+    font-size: $h2FontSize;
+    font-weight: $h2FontWeight;
+    line-height: $headingsLineHeight;
+    color: $darkGray;
+}
+
+h3 {
+    font-family: $headingsFontFamily;
+    font-size: $h3FontSize;
+    font-weight: $h3FontWeight;
+    line-height: $headingsLineHeight;
+    color: $white;
+}
+
+a {
+    color: $black;
+    &:hover {
+        transition: all 0.35s ease-in-out;
+    }
+}
+
+/* Header classes */ 
+.header {
+    background-color: #292929;
+    text-transform: uppercase;
+    height: 90px;
+    // example of Sass meeting. Will output as ".header a"
+    a {
+        color: $white;
+    }
+}
+
+.brand {
+    margin-top: 16px;
+}
+
+.nav {
+    margin-top: 30px;
+}
+
+.nav>li>a:hover {
+    background-color: $black;
+    color: $turquoise;
+}
+
+.nav>li>a.btn-sm:hover {
+    background-color: darken($turquoise, 10%);
+    color: $white;
+}
+    
+a.login {
+    color: #999999;
+}
+    
+// Override Bootstrap class
+.btn-sm {
+    // Reference mixin
+    @include color-bg-text;
+    // Override Bootstrap font-size for .btn-sm
+    font-size: inherit;
+}
+
+/* Footer rules */
+.footer-top {
+    background-color: #5f5f5f;
+    padding-top: 136px;
+    padding-bottom: 120px; 
+    color: $white;
+    // nested group selector will output ".footer-top h2" and
+    // ".footer-top a"
+    h2,
+    a {
+        color: #84ccd3;
+    }
+}
+
+.footer-bottom {
+    background-color: #2a2a2a;
+    padding-top: 27px;
+    padding-bottom: 95px;
+    padding-left: 34px;
+}
+
+// footer rollovers
+.icon-large:hover {
+    color: turquoise;
+    text-decoration: none;
+    transition: all 0.35s ease-in-out;
+}
+
+/* Component classes */
+// Bootstrap class with a few overrides/additions
+.well {
+    text-align: center;
+    h3 {
+        color: #5d5d5d;
+    }
+    em {
+        color: #999999;
+    }
+}
+
+// Bootstrap class with addition
+.breadcrumb {
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+
+.message {
+    @include color-bg-text;
+    font-size: 40px;
+    padding-top: 142px;
+    padding-right: 46px;
+    padding-bottom: 148px;
+    padding-left: 46px;
+    margin-bottom: 0; // removes 10px from Bootstrap "row" class
+   
+    h2 {
+        color: #ffffff;
+    }
+}
+
+.clients {
+    padding-bottom: 130px;
+}
+
+.image-break {
+    background: url(../images/paper-texture.jpg) repeat-x;
+    height: 45px;
+    opacity: 0.5;
+    margin-bottom: 60px;
+}
+
+/* Site-wide classes */
+// Navigation link color for active page
+.active>a {
+    color: $turquoise;
+}
+
+// Text color for 2nd line below page title for some pages
+// Bootstrap override 
+.lead {
+    color: $turquoise;
+}
+
+// Helper class user to add space below content where needed.
+// Content class locations identified further along in exercise
+.content {
+    padding-bottom: 136px;
+}
+
+// About page
+.title-box {
+    @include color-bg-text;
+    padding: 10px;
+    position: relative;
+    em {
+        color: $black;
+    }
+}
+
+// Creates the point bit
+.title-box:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 44%; 
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: $turquoise transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+// Services page
+.services {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.headline {
+    margin-bottom: 0; // remove some default spacing
+}
+
+.title-box.active {
+    background-color: $black;
+}
+
+.title-box.active:after {
+    border-color: $black transparent;
+}
+
+.pricing-table {
+    border: 1px solid $beige;
+    border-bottom: 7px solid $beige;
+    margin-bottom: 40px;
+
+    li {
+        color: $black;
+        padding: 20px;
+        border-bottom: 1px dotted $beige;
+        font-weight: bold;
+    }
+
+    .price {
+        font-size: 26px;
+        border-bottom: 1px dotted $beige;
+        margin-top: 0;
+    }
+    
+    .info {
+        font-weight: normal;
+        font-size: 13px;
+        color: $lightGray;
+    }
+}
+
+.btn-main-small {
+    @include color-bg-text;
+    border-bottom: 5px solid $turquoise;
+    border-radius: 2px;
+    padding: 8px 18px;
+}
+
+// services
+.btn-main-small:hover {
+    background-color: darken($turquoise, 10%);
+    color: white;
+    text-decoration: none;
+    transition: all 0.35s ease-in-out;
+}
+
+// Portfolio
+.thumbs a {
+    opacity: 0; // Hide text below thumbs
+}
+
+// Go to this rule comment out margin-bottom
+// Add margin-top w/value
+.news-date {
+    background-color: $black;
+    padding: 10px;
+//  margin-bottom: 30px;
+    margin-top: 20px;
+    border-bottom: 5px solid $darkGray;
+    text-align: center;
+
+    h2 {
+        color: $turquoise;
+        font-size: 40px;
+        font-weight: 300;
+        letter-spacing: -3px;
+        line-height: 20px;
+        padding-bottom: 0;
+    }
+    
+    h3 {
+        color: $white; 
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 20px;
+        padding-bottom: 0;
+    }   
+}
+
+.blog-article {
+    padding-right: 35px;
+    padding-bottom: 80px;
+}
+
+.sidebar {
+    padding-left: 35px;
+}
+
+a.more {
+    color: $turquoise;
+    font-weight: bold;
+}
+
+.blog-links {
+    li {
+        padding: 5px 0 5px 0;
+    }
+    a {
+        color: $turquoise;
+        text-decoration: none;
+    }
+}
+
+.media-grid img:hover {
+    opacity: .5;
+    transition: all 0.35s ease-in-out;
+}
+
+.media-grid li {
+    padding: 5px;
+}
+
+
+// Contact
+.map {
+    height: 266px;
+}
+
+iframe {
+    background-color: transparent;
+    border: medium none;
+    height: inherit;
+    overflow: hidden;
+    width: 100%;
+}
+
+// Bootstrap additions
+.form-control {
+    background-color: $beige;
+    margin-bottom: 10px;
+}
+
+// Bootstrap additions
+.btn-primary {
+    background-color: $black;
+    border-color: $black;
+    // the ampersand allows for nested pseduo-selectors
+    &:hover {
+        background-color: $darkGray;
+    }
+}
+
+/* Font Awesome overrides */
+.icon-4x {
+    color: $turquoise;
+}
+
+.icon-large {
+    color: $white;
+}
+
+.content .icon-large {
+    color: $turquoise;
+}
+
+@import "thumbs";
+@import "progress-bar";
+@import "navbar";
+@import "carousel";
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .navbar-collapse .navbar-nav.navbar-right:last-child {
+        margin-right: 5px;
+    }
+
+    .nav>li>a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .nav {
+        margin-bottom: 10px;
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .nav {
+        margin-top: 20px;
+    }
+
+    
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .nav>li>a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/*
+ The animate class is apart of the element and the ng-enter class
+ is attached to the element once the enter animation event is triggered
+*/
+.reveal-animation.ng-enter {
+   -webkit-transition: 1s linear all; /* Safari/Chrome */
+   -moz-transition: 1s linear all; /* Firefox */
+   -o-transition: 1s linear all; /* Opera */
+   transition: 1s linear all; /* IE10+ and Future Browsers */
+ 
+   /* The animation preparation code */
+   opacity: 0;
+}
+ 
+/*
+ Keep in mind that you want to combine both CSS classes together to 
+ avoid any CSS-specificity
+ conflicts
+*/
+.reveal-animation.ng-enter.ng-enter-active {
+  /* The animation code itself */
+  opacity: 1;
+}
+
+// Pushes main content down from fixed position header 
+#content {
+    padding-top: 80px;
+}
+
+// Sets background color if not already set 
+.navbar {
+    background-color: black;
+}
+
+// Remove main page headings 
+.page-header {
+    display: none;
+}
+
+// Bring logo in as background image and move text off-screen
+// Get path to the logo from your media library 
+.navbar-brand {
+    maring-top: 10px;
+    background: url('http://1.modifieddigital.com/schow11/breakroom-wp/wp-content/uploads/2013/10/logo.png');
+    width: 225px;
+    height: 61px;
+    text-indent: -99em;
+}
+
+// Add to rule to _carousel.scss
+.carousel-post-title {
+    font-family: "Lato", sans-serif;
+    line-height: 1.2;
+    font-size: 55px;
+    font-weight: 100;
+    color: white;
+    background-color: #2a2a2a;
+}
+
+// Styles blog page article readings
+.entry-title {
+    font-family: "Lato", sans-serif;
+    line-height: 1.2;
+    font-size: 31px;
+    font-weight: 300;
+    color: rgb (93, 93, 93);
+    background-color: transparent;
+}

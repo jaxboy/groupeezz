@@ -1,0 +1,26 @@
+<!-- Unordered list, make "Home" a link and use "index.html" for the href attribute value -->
+Home / Contact
+
+<!-- Heading 1 -->
+Get In touch
+
+<!-- Paragraph -->
+We Would Love To Hear From You
+
+<!-- Paragraph -->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+<-- Form content -->
+<-- Input, type text, enter "Your name" for placeholder attribute -->
+
+<-- Input, type text, enter "Your email address" for placeholder attribute -->
+
+<-- Input, type text, enter "Subject" for placeholder attribute -->
+
+<-- Input, type textarea, enter "The message you want to send to me" for placeholder attribute -->
+
+<-- Button, type submit	-->
+Submit
+
+<!-- Google map -->
+<!-- Iframe, src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=atlanta&amp;aq=&amp;sll=32.678125,-83.178297&amp;sspn=8.89966,16.907959&amp;ie=UTF8&amp;hq=&amp;hnear=Atlanta,+Fulton,+Georgia&amp;t=m&amp;z=6&amp;iwloc=A&amp;output=embed" -->

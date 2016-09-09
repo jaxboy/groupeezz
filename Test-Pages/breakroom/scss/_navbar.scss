@@ -1,0 +1,56 @@
+/* bs nav overrides */
+.header {
+    height: auto;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: $white;
+    &:hover {
+        color: $lightGray;
+    }
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: $darkGray;
+    background-color: transparent;
+    &:hover {
+        background-color: transparent;
+        color: $lightGray;
+    }
+}
+
+.navbar-default .navbar-nav > li > a.btn-sm:hover {
+    color: $white;
+}
+
+.navbar-default .navbar-nav > li > a.login {
+    color: $lightGray;
+    &:hover {
+        color: $darkGray;
+    }
+}
+
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 40px;
+}
+
+.navbar-default .navbar-toggle {
+    margin-top: 30px;
+    margin-right: 30px;
+    &:hover {
+        background-color: lighten($black, 10%);
+    }
+}
+
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+}

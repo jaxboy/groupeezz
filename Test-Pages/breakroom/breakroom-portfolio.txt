@@ -1,0 +1,53 @@
+<!-- Unordered list, make "Home" a link and use "index.html" for the href attribute value -->
+Home / Portfolio
+
+<!-- Heading 2 -->
+Latest Work
+
+<!-- Image, path to image is "images/portfolio1.jpg", enter "Portfolio example" for alt attribute value -->
+
+<!-- Link, make href attribute value = "#" -->
+Project Title 1
+
+<!-- Image, path to image is "images/portfolio2.jpg", enter "Portfolio example" for alt attribute value -->
+
+<!-- Link, make href attribute value = "#" -->
+Project Title 2
+
+<!-- Image, path to image is "images/portfolio3.jpg", enter "Portfolio example" for alt attribute value -->
+
+<!-- Link, make href attribute value = "#" -->
+Project Title 3
+
+<!-- Image, path to image is "images/portfolio4.jpg", enter "Portfolio example" for alt attribute value -->
+
+<!-- Link, make href attribute value = "#" -->
+Project Title 4
+
+<!-- Image, path to image is "images/portfolio5.jpg", enter "Portfolio example" for alt attribute value -->
+
+<!-- Link, make href attribute value = "#" -->
+Project Title 5
+
+<!-- Image, path to image is "images/portfolio6.jpg", enter "Portfolio example" for alt attribute value -->
+
+<!-- Link, make href attribute value = "#" -->
+Project Title 6
+
+<!-- Heading 2 -->
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Us neque, sed blandit ante. Integer eget massa blandit ante.
+
+<!-- Heading 2 -->
+Our Clients
+
+<!-- Image, path to image is "images/client1.png", enter "Company logo" for alt attribute value -->
+
+<!-- Image, path to image is "images/client1.png", enter "Company logo" for alt attribute value -->
+
+<!-- Image, path to image is "images/client1.png", enter "Company logo" for alt attribute value -->
+
+<!-- Image, path to image is "images/client1.png", enter "Company logo" for alt attribute value -->
+
+<!-- Image, path to image is "images/client1.png", enter "Company logo" for alt attribute value -->
+
+<!-- Image, path to image is "images/client1.png", enter "Company logo" for alt attribute value -->

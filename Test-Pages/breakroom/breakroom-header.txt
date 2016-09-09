@@ -1,0 +1,19 @@
+<!-- Image, path to image is "images/logo.png", enter "Breakroom logo" for alt attribute value -->
+
+<!-- Unordered list -->
+Home
+<!-- Link, make href attribute value = "index.html" -->
+About
+<!-- Link, make href attribute value = "about.html" -->
+Services
+<!-- Link, make href attribute value = "services.html" -->
+Portfolio
+<!-- Link, make href attribute value = "portfolio.html" -->
+Blog
+<!-- Link, make href attribute value = "blog.html" -->
+Contact
+<!-- Link, make href attribute value = "contact.html" -->
+Login
+<!-- Link, make href attribute value = "#" -->
+Sign Up
+<!-- Link, make href attribute value = "#" -->
