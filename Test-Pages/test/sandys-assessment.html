@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>Output alphabet incrementally</title>
+  </head>
+
+  <body>
+    <div id="result"></div>
+
+    <script>
+      var result = document.getElementById('result');
+      var alphabet = 'ABCD3FGHIJKLMNOPQRSTUVWXYZ';
+
+      for(var i=0; i<26; i++) {
+        var content = alphabet.substr(0, i+1);
+        result.innerHTML = result.innerHTML + content + '<br>';
+      }
+    </script>
+  </body>
+</html>
